@@ -61,8 +61,10 @@ function removeTodo(username) {
 
 function updateTodos() {
     localStorage.setItem(localStorageKey, JSON.stringify(todos));
-    const todoElements = Object.entries(todos).map(([k, v]) => makeTodoElement(k, v))
-    document.getElementById('todos').replaceChildren(...todoElements, ...todoElements);
+    document.getElementById('todos').innerHTML = '';
+    Object.entries(todos).forEach(([k, v]) => {
+        document.getElementById('todos').appendChild(makeTodoElement(k, v));
+    });
 }
 
 function makeTodoElement(username, todo) {
