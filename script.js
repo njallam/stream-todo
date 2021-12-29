@@ -71,7 +71,7 @@ function makeTodoElement(username, todo) {
     const user = document.createElement('span');
     user.style.color = todo.color;
     user.innerHTML = username;
-    const todoElement = document.createElement('span');
+    const todoElement = document.createElement('div');
     todoElement.innerHTML = ': ' + todo.todo;
     todoElement.prepend(user);
     return todoElement;
