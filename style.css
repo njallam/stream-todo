@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 32pt;
+    font-family: monospace;
 }
 
 marquee {
