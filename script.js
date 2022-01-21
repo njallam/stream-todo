@@ -68,7 +68,7 @@ function updateTodos() {
 }
 
 function makeTodoElement(username, todo) {
-    const user = document.createElement('span');
+    const user = document.createElement('strong');
     user.style.color = todo.color;
     user.innerText = username;
     const todoElement = document.createElement('div');
