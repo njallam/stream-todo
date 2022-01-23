@@ -7,6 +7,8 @@ body {
     font-family: monospace;
 }
 
-marquee {
+#todos {
     flex-grow: 1;
+    text-indent: -1ch;
+    padding-left: 1ch;
 }
